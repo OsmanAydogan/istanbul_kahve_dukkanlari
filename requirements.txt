@@ -1,0 +1,4 @@
+folium==0.15.0       # Harita oluşturma
+geopy==2.4.1         # Coğrafi mesafe hesaplama
+pulp==2.8.0          # Optimizasyon modelleme
+requests==2.31.0     # HTTP istekleri için

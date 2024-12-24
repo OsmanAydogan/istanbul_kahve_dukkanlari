@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_54b04c0ae0911d4d627f7489360572c2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_54b04c0ae0911d4d627f7489360572c2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_54b04c0ae0911d4d627f7489360572c2 = L.map(
+                "map_54b04c0ae0911d4d627f7489360572c2",
+                {
+                    center: [41.008, 28.978],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ee8f43eb7690852baf18295ab1d95a41 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_ee8f43eb7690852baf18295ab1d95a41.addTo(map_54b04c0ae0911d4d627f7489360572c2);
+    
+            var marker_8abeda8611ef8d1b8695a6c7ef38d9c7 = L.marker(
+                [41.0307752, 28.9503855],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_dc7316e1840adcd1f5ce32fa2aabb22d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8abeda8611ef8d1b8695a6c7ef38d9c7.setIcon(icon_dc7316e1840adcd1f5ce32fa2aabb22d);
+        
+    
+        var popup_56576bdaa3ea98d706bbe5c7072f217a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2426338cb770b81a387566f12996974 = $(`<div id="html_b2426338cb770b81a387566f12996974" style="width: 100.0%; height: 100.0%;">Kafe: Kadın Eserleri Kütüphanesi</div>`)[0];
+                popup_56576bdaa3ea98d706bbe5c7072f217a.setContent(html_b2426338cb770b81a387566f12996974);
+            
+        
+
+        marker_8abeda8611ef8d1b8695a6c7ef38d9c7.bindPopup(popup_56576bdaa3ea98d706bbe5c7072f217a)
+        ;
+
+        
+    
+    
+            var marker_92fc183fddbae9819545e536ae98f36e = L.marker(
+                [41.0531016, 29.2383381],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_4f95e542950d019d812d92610a603aca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_92fc183fddbae9819545e536ae98f36e.setIcon(icon_4f95e542950d019d812d92610a603aca);
+        
+    
+        var popup_a89db6e66dceed144236b28646882f64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d6dab1b49d0ab3b7e998cef4b55bb58 = $(`<div id="html_9d6dab1b49d0ab3b7e998cef4b55bb58" style="width: 100.0%; height: 100.0%;">Kütüphane: Fatma Aliye Kütüphanesi</div>`)[0];
+                popup_a89db6e66dceed144236b28646882f64.setContent(html_9d6dab1b49d0ab3b7e998cef4b55bb58);
+            
+        
+
+        marker_92fc183fddbae9819545e536ae98f36e.bindPopup(popup_a89db6e66dceed144236b28646882f64)
+        ;
+
+        
+    
+    
+            var marker_e01e7c845f58ba50e98891ff49619f15 = L.marker(
+                [41.1085892, 28.9891522],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_3307df005c1495bebf707b66a27aa5e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e01e7c845f58ba50e98891ff49619f15.setIcon(icon_3307df005c1495bebf707b66a27aa5e0);
+        
+    
+        var popup_29c9b6350c0e60bf1f4d52eb002238d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e88967180e9efedb79407c3b77b58540 = $(`<div id="html_e88967180e9efedb79407c3b77b58540" style="width: 100.0%; height: 100.0%;">Kütüphane: Cendere Sanat Kitaplığı</div>`)[0];
+                popup_29c9b6350c0e60bf1f4d52eb002238d1.setContent(html_e88967180e9efedb79407c3b77b58540);
+            
+        
+
+        marker_e01e7c845f58ba50e98891ff49619f15.bindPopup(popup_29c9b6350c0e60bf1f4d52eb002238d1)
+        ;
+
+        
+    
+    
+            var marker_ed88cfad6331e9345fc33cd0fd5a5f4e = L.marker(
+                [41.0648378, 28.9871121],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_68f6bf170e1d7a3dc5bc10dfff57d144 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed88cfad6331e9345fc33cd0fd5a5f4e.setIcon(icon_68f6bf170e1d7a3dc5bc10dfff57d144);
+        
+    
+        var popup_c0cb0ea1f3b28a7cc7c900322dad4949 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45a8846df871c548d0ea830cda37dad1 = $(`<div id="html_45a8846df871c548d0ea830cda37dad1" style="width: 100.0%; height: 100.0%;">Kütüphane: Habitat Kütüphane</div>`)[0];
+                popup_c0cb0ea1f3b28a7cc7c900322dad4949.setContent(html_45a8846df871c548d0ea830cda37dad1);
+            
+        
+
+        marker_ed88cfad6331e9345fc33cd0fd5a5f4e.bindPopup(popup_c0cb0ea1f3b28a7cc7c900322dad4949)
+        ;
+
+        
+    
+    
+            var marker_7d8837b4d61737bc2c2c1099dbcb7226 = L.marker(
+                [41.0462622, 28.6353933],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_62da1e083186537089187a987f0f45b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d8837b4d61737bc2c2c1099dbcb7226.setIcon(icon_62da1e083186537089187a987f0f45b5);
+        
+    
+        var popup_a5b87f690c482f0e8704b0ee23c0b1cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f5220109516c7ab1dcc341888b79804 = $(`<div id="html_8f5220109516c7ab1dcc341888b79804" style="width: 100.0%; height: 100.0%;">Kütüphane: Erdem Bayazıt Kütüphanesi</div>`)[0];
+                popup_a5b87f690c482f0e8704b0ee23c0b1cb.setContent(html_8f5220109516c7ab1dcc341888b79804);
+            
+        
+
+        marker_7d8837b4d61737bc2c2c1099dbcb7226.bindPopup(popup_a5b87f690c482f0e8704b0ee23c0b1cb)
+        ;
+
+        
+    
+    
+            var marker_ef8879a154ead84231e69923dca63c28 = L.marker(
+                [41.0938952, 28.9050931],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_21c4b6ef2ecb11f9b298846de576788a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef8879a154ead84231e69923dca63c28.setIcon(icon_21c4b6ef2ecb11f9b298846de576788a);
+        
+    
+        var popup_d96c8130f9804e59154a02c532394b14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a4837478f31ba5ffeada6dc9de6c888 = $(`<div id="html_9a4837478f31ba5ffeada6dc9de6c888" style="width: 100.0%; height: 100.0%;">Kütüphane: Ahmed Arif Halk Kütüphanesi</div>`)[0];
+                popup_d96c8130f9804e59154a02c532394b14.setContent(html_9a4837478f31ba5ffeada6dc9de6c888);
+            
+        
+
+        marker_ef8879a154ead84231e69923dca63c28.bindPopup(popup_d96c8130f9804e59154a02c532394b14)
+        ;
+
+        
+    
+    
+            var marker_291540a273bc3e86f50eb43859d03d31 = L.marker(
+                [41.041147, 29.007321],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_77274404cde6dd6358d59bc9b494f866 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_291540a273bc3e86f50eb43859d03d31.setIcon(icon_77274404cde6dd6358d59bc9b494f866);
+        
+    
+        var popup_473bbc6db2fe23d67b949bbc8874f154 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf4209d2ed6aed011ae829beb4fd9c13 = $(`<div id="html_cf4209d2ed6aed011ae829beb4fd9c13" style="width: 100.0%; height: 100.0%;">Kütüphane: Beşiktaş İskele Kütüphanesi</div>`)[0];
+                popup_473bbc6db2fe23d67b949bbc8874f154.setContent(html_cf4209d2ed6aed011ae829beb4fd9c13);
+            
+        
+
+        marker_291540a273bc3e86f50eb43859d03d31.bindPopup(popup_473bbc6db2fe23d67b949bbc8874f154)
+        ;
+
+        
+    
+    
+            var marker_460c5211a7d504b40f2fb84cf942d59a = L.marker(
+                [40.9971785, 29.0425977],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_45a9a65a169c5038741c30bdbea32fee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_460c5211a7d504b40f2fb84cf942d59a.setIcon(icon_45a9a65a169c5038741c30bdbea32fee);
+        
+    
+        var popup_585ea57c89b3abd0216be35a90f2e679 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcf965f7979cefa8457d95a8d77e8f18 = $(`<div id="html_dcf965f7979cefa8457d95a8d77e8f18" style="width: 100.0%; height: 100.0%;">Kütüphane: Afife Batur Kütüphanesi</div>`)[0];
+                popup_585ea57c89b3abd0216be35a90f2e679.setContent(html_dcf965f7979cefa8457d95a8d77e8f18);
+            
+        
+
+        marker_460c5211a7d504b40f2fb84cf942d59a.bindPopup(popup_585ea57c89b3abd0216be35a90f2e679)
+        ;
+
+        
+    
+    
+            var marker_3ff05cc04f60128826db23fc0b83b395 = L.marker(
+                [41.0341057, 28.6509774],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_e46a82b69070d6a1421071578ccd7c44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ff05cc04f60128826db23fc0b83b395.setIcon(icon_e46a82b69070d6a1421071578ccd7c44);
+        
+    
+        var popup_d64db4cdc34e84a272e299125bf396fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9709b3142867401733e0de9abbeb516 = $(`<div id="html_b9709b3142867401733e0de9abbeb516" style="width: 100.0%; height: 100.0%;">Kütüphane: Gülten Akın Kütüphanesi</div>`)[0];
+                popup_d64db4cdc34e84a272e299125bf396fc.setContent(html_b9709b3142867401733e0de9abbeb516);
+            
+        
+
+        marker_3ff05cc04f60128826db23fc0b83b395.bindPopup(popup_d64db4cdc34e84a272e299125bf396fc)
+        ;
+
+        
+    
+    
+            var marker_374d975f93ebbb912a93752b880b99f5 = L.marker(
+                [41.0292083, 29.0800669],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_1790a06f210f4c5b78085785cbfc91ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_374d975f93ebbb912a93752b880b99f5.setIcon(icon_1790a06f210f4c5b78085785cbfc91ec);
+        
+    
+        var popup_676ecf4710d9b66e47a9fe3d83f595e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7042837c733acbd7e6e22420e00b0b76 = $(`<div id="html_7042837c733acbd7e6e22420e00b0b76" style="width: 100.0%; height: 100.0%;">Kütüphane: Salah Birsel Kütüphanesi</div>`)[0];
+                popup_676ecf4710d9b66e47a9fe3d83f595e1.setContent(html_7042837c733acbd7e6e22420e00b0b76);
+            
+        
+
+        marker_374d975f93ebbb912a93752b880b99f5.bindPopup(popup_676ecf4710d9b66e47a9fe3d83f595e1)
+        ;
+
+        
+    
+    
+            var marker_7e36678de03d1eadb84f69196a8c590d = L.marker(
+                [40.9751207, 28.7864928],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_efc062be0d27e60b14e9307d145a362f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e36678de03d1eadb84f69196a8c590d.setIcon(icon_efc062be0d27e60b14e9307d145a362f);
+        
+    
+        var popup_e3387f22f6e00c9b8ca37307e6de6bd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb5a784bb096965dcdab71aa60cdc087 = $(`<div id="html_bb5a784bb096965dcdab71aa60cdc087" style="width: 100.0%; height: 100.0%;">Kütüphane: İPA İstanbul Kitaplığı</div>`)[0];
+                popup_e3387f22f6e00c9b8ca37307e6de6bd2.setContent(html_bb5a784bb096965dcdab71aa60cdc087);
+            
+        
+
+        marker_7e36678de03d1eadb84f69196a8c590d.bindPopup(popup_e3387f22f6e00c9b8ca37307e6de6bd2)
+        ;
+
+        
+    
+    
+            var marker_3892298d7f9347d5cfdacd06013b42e4 = L.marker(
+                [41.1871598, 28.8829816],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_73e89a4b66e4cf1b6d13446044a7e12c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3892298d7f9347d5cfdacd06013b42e4.setIcon(icon_73e89a4b66e4cf1b6d13446044a7e12c);
+        
+    
+        var popup_166bac6834d715b43fe75e214492cb71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50175afabf7ef930eecdd1fc4f9b3683 = $(`<div id="html_50175afabf7ef930eecdd1fc4f9b3683" style="width: 100.0%; height: 100.0%;">Kütüphane: Sesli Kütüphane</div>`)[0];
+                popup_166bac6834d715b43fe75e214492cb71.setContent(html_50175afabf7ef930eecdd1fc4f9b3683);
+            
+        
+
+        marker_3892298d7f9347d5cfdacd06013b42e4.bindPopup(popup_166bac6834d715b43fe75e214492cb71)
+        ;
+
+        
+    
+    
+            var marker_b40a5cd98e88740fde06e2443543a683 = L.marker(
+                [40.8203218, 29.2814687],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_abd0dda933b7d2ca35a901093502a21f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b40a5cd98e88740fde06e2443543a683.setIcon(icon_abd0dda933b7d2ca35a901093502a21f);
+        
+    
+        var popup_e24e6ab4da6eaf38f5adb76d43615fd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b925f16248ab5ecfce320d23db687a9e = $(`<div id="html_b925f16248ab5ecfce320d23db687a9e" style="width: 100.0%; height: 100.0%;">Kütüphane: Necati Cumalı Kütüphanesi</div>`)[0];
+                popup_e24e6ab4da6eaf38f5adb76d43615fd2.setContent(html_b925f16248ab5ecfce320d23db687a9e);
+            
+        
+
+        marker_b40a5cd98e88740fde06e2443543a683.bindPopup(popup_e24e6ab4da6eaf38f5adb76d43615fd2)
+        ;
+
+        
+    
+    
+            var marker_ddafba84da677d3728a6764a0d98c35e = L.marker(
+                [41.1458074, 29.0280015],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_5ee62a7b8e871b2a7e99d9157735cc1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ddafba84da677d3728a6764a0d98c35e.setIcon(icon_5ee62a7b8e871b2a7e99d9157735cc1b);
+        
+    
+        var popup_abbd5a0f6077ebc25f623d9787328528 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6757c0388a141248a7134b09d34be9c = $(`<div id="html_a6757c0388a141248a7134b09d34be9c" style="width: 100.0%; height: 100.0%;">Kütüphane: Ahmet Bedevi Kütüphanesi</div>`)[0];
+                popup_abbd5a0f6077ebc25f623d9787328528.setContent(html_a6757c0388a141248a7134b09d34be9c);
+            
+        
+
+        marker_ddafba84da677d3728a6764a0d98c35e.bindPopup(popup_abbd5a0f6077ebc25f623d9787328528)
+        ;
+
+        
+    
+    
+            var marker_e39abdc74b7e5c65c8991a66fa36b91c = L.marker(
+                [40.9976787, 28.7927645],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_114905834b2af9976c71f820ce076ad3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e39abdc74b7e5c65c8991a66fa36b91c.setIcon(icon_114905834b2af9976c71f820ce076ad3);
+        
+    
+        var popup_23fda15e9866966e817e04375242b736 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e006518c9eef04db7f8f07cdffde19df = $(`<div id="html_e006518c9eef04db7f8f07cdffde19df" style="width: 100.0%; height: 100.0%;">Kütüphane: Metin And Kütüphanesi</div>`)[0];
+                popup_23fda15e9866966e817e04375242b736.setContent(html_e006518c9eef04db7f8f07cdffde19df);
+            
+        
+
+        marker_e39abdc74b7e5c65c8991a66fa36b91c.bindPopup(popup_23fda15e9866966e817e04375242b736)
+        ;
+
+        
+    
+    
+            var marker_4f5bfcec076ed7d1f43b66f2d87241f9 = L.marker(
+                [41.0135686, 29.2066752],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_1137dfb72a7178b977f8d7147e515f86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4f5bfcec076ed7d1f43b66f2d87241f9.setIcon(icon_1137dfb72a7178b977f8d7147e515f86);
+        
+    
+        var popup_3120cee5b8880c2ac6b9a9caf1d431bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_475ec0fc0f25142c7a5a2a7db0621922 = $(`<div id="html_475ec0fc0f25142c7a5a2a7db0621922" style="width: 100.0%; height: 100.0%;">Kütüphane: Yaşar Kemal Kütüphanesi</div>`)[0];
+                popup_3120cee5b8880c2ac6b9a9caf1d431bd.setContent(html_475ec0fc0f25142c7a5a2a7db0621922);
+            
+        
+
+        marker_4f5bfcec076ed7d1f43b66f2d87241f9.bindPopup(popup_3120cee5b8880c2ac6b9a9caf1d431bd)
+        ;
+
+        
+    
+    
+            var marker_78f2cfd7483e7e46d05957a277211e23 = L.marker(
+                [40.9690471, 29.2668984],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_6292046cde95164b451a1295cd7cce02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78f2cfd7483e7e46d05957a277211e23.setIcon(icon_6292046cde95164b451a1295cd7cce02);
+        
+    
+        var popup_ace08f2f8cfdf9853d0ddc701ecea0a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33b21c9ec79013b2f92b5071b6b83b65 = $(`<div id="html_33b21c9ec79013b2f92b5071b6b83b65" style="width: 100.0%; height: 100.0%;">Kütüphane: İlhan Varank Kütüphanesi</div>`)[0];
+                popup_ace08f2f8cfdf9853d0ddc701ecea0a7.setContent(html_33b21c9ec79013b2f92b5071b6b83b65);
+            
+        
+
+        marker_78f2cfd7483e7e46d05957a277211e23.bindPopup(popup_ace08f2f8cfdf9853d0ddc701ecea0a7)
+        ;
+
+        
+    
+    
+            var marker_ecb052e742008af2f090237a6f047d0a = L.marker(
+                [41.1863569, 28.7653643],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_fffea3df7c591ed9603f223eb297d585 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ecb052e742008af2f090237a6f047d0a.setIcon(icon_fffea3df7c591ed9603f223eb297d585);
+        
+    
+        var popup_da3eca1d728171c5954d811478e3a5a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bad6d42f674b1ff0da77c50aa085bb04 = $(`<div id="html_bad6d42f674b1ff0da77c50aa085bb04" style="width: 100.0%; height: 100.0%;">Kütüphane: Cemil Meriç Kütüphanesi</div>`)[0];
+                popup_da3eca1d728171c5954d811478e3a5a4.setContent(html_bad6d42f674b1ff0da77c50aa085bb04);
+            
+        
+
+        marker_ecb052e742008af2f090237a6f047d0a.bindPopup(popup_da3eca1d728171c5954d811478e3a5a4)
+        ;
+
+        
+    
+    
+            var marker_234b031190a92616b359522724eb811e = L.marker(
+                [41.0156553, 28.9255868],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_77702843b7429a34712f87861166f1a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_234b031190a92616b359522724eb811e.setIcon(icon_77702843b7429a34712f87861166f1a5);
+        
+    
+        var popup_3301cf74afdcb5d22164fb083bcd162e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8c846571bee94c67369bea8bcf22d33 = $(`<div id="html_c8c846571bee94c67369bea8bcf22d33" style="width: 100.0%; height: 100.0%;">Kütüphane: Kara Surları Mevlanakapı Kütüphanesi</div>`)[0];
+                popup_3301cf74afdcb5d22164fb083bcd162e.setContent(html_c8c846571bee94c67369bea8bcf22d33);
+            
+        
+
+        marker_234b031190a92616b359522724eb811e.bindPopup(popup_3301cf74afdcb5d22164fb083bcd162e)
+        ;
+
+        
+    
+    
+            var marker_016dac901c4a1550ec56aa794e16639e = L.marker(
+                [41.1794703, 28.7459919],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_493f3933cdd3333a62ab065425b3a0a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_016dac901c4a1550ec56aa794e16639e.setIcon(icon_493f3933cdd3333a62ab065425b3a0a8);
+        
+    
+        var popup_6b4e9e19f5d879bc65c61027f9be17d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e7960b13eab21766ff0767a68fea08e = $(`<div id="html_3e7960b13eab21766ff0767a68fea08e" style="width: 100.0%; height: 100.0%;">Kütüphane: Rıfat Ilgaz Kütüphanesi</div>`)[0];
+                popup_6b4e9e19f5d879bc65c61027f9be17d5.setContent(html_3e7960b13eab21766ff0767a68fea08e);
+            
+        
+
+        marker_016dac901c4a1550ec56aa794e16639e.bindPopup(popup_6b4e9e19f5d879bc65c61027f9be17d5)
+        ;
+
+        
+    
+    
+            var marker_3c769b718bad3338fba3103e121e2f73 = L.marker(
+                [40.9840594, 29.0308078],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_c9b76bdf9c7a3b947cf9c1d5bfe0de8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c769b718bad3338fba3103e121e2f73.setIcon(icon_c9b76bdf9c7a3b947cf9c1d5bfe0de8c);
+        
+    
+        var popup_76e811131c54123d18c2ace80606827f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf54d3c918217b6433b553a4ed5b38ad = $(`<div id="html_cf54d3c918217b6433b553a4ed5b38ad" style="width: 100.0%; height: 100.0%;">Kütüphane: Özgen Berkol Doğan Kütüphanesi</div>`)[0];
+                popup_76e811131c54123d18c2ace80606827f.setContent(html_cf54d3c918217b6433b553a4ed5b38ad);
+            
+        
+
+        marker_3c769b718bad3338fba3103e121e2f73.bindPopup(popup_76e811131c54123d18c2ace80606827f)
+        ;
+
+        
+    
+    
+            var marker_1d184c0000a46d9c1d589920478212bb = L.marker(
+                [41.0683594, 28.7528976],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_012492d994c6d2679c90024bb8b4ed84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d184c0000a46d9c1d589920478212bb.setIcon(icon_012492d994c6d2679c90024bb8b4ed84);
+        
+    
+        var popup_bad70f055c254b4229b2a2e68cc399dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9642468d5cf1ed0e1ca7c02930a7af99 = $(`<div id="html_9642468d5cf1ed0e1ca7c02930a7af99" style="width: 100.0%; height: 100.0%;">Kütüphane: Sabahattin Ali Kütüphanesi</div>`)[0];
+                popup_bad70f055c254b4229b2a2e68cc399dc.setContent(html_9642468d5cf1ed0e1ca7c02930a7af99);
+            
+        
+
+        marker_1d184c0000a46d9c1d589920478212bb.bindPopup(popup_bad70f055c254b4229b2a2e68cc399dc)
+        ;
+
+        
+    
+    
+            var marker_f6f6148ca2a3ce0b9e5c8020fb875d0d = L.marker(
+                [41.0978634, 28.8764685],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_c630a49fb8c65b0e7b7e0533c2a1efc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f6f6148ca2a3ce0b9e5c8020fb875d0d.setIcon(icon_c630a49fb8c65b0e7b7e0533c2a1efc2);
+        
+    
+        var popup_f3a7c070311ba2e96220f0cdc814c6a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_821a5fe34623c578b26d2bdaebed7016 = $(`<div id="html_821a5fe34623c578b26d2bdaebed7016" style="width: 100.0%; height: 100.0%;">Kütüphane: Hacı Bektaşi Veli Kütüphanesi</div>`)[0];
+                popup_f3a7c070311ba2e96220f0cdc814c6a0.setContent(html_821a5fe34623c578b26d2bdaebed7016);
+            
+        
+
+        marker_f6f6148ca2a3ce0b9e5c8020fb875d0d.bindPopup(popup_f3a7c070311ba2e96220f0cdc814c6a0)
+        ;
+
+        
+    
+    
+            var marker_09228ff26ac27f9ff51e36799ebd9fd3 = L.marker(
+                [41.1044027, 28.7853869],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_cd8a1c4741963238ae6ad8669354f766 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09228ff26ac27f9ff51e36799ebd9fd3.setIcon(icon_cd8a1c4741963238ae6ad8669354f766);
+        
+    
+        var popup_89d4e48323df9556f033f820166a83c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19a8920ae159d8c45040e4b774fbd646 = $(`<div id="html_19a8920ae159d8c45040e4b774fbd646" style="width: 100.0%; height: 100.0%;">Kütüphane: Rasim Özdenören Kütüphanesi</div>`)[0];
+                popup_89d4e48323df9556f033f820166a83c8.setContent(html_19a8920ae159d8c45040e4b774fbd646);
+            
+        
+
+        marker_09228ff26ac27f9ff51e36799ebd9fd3.bindPopup(popup_89d4e48323df9556f033f820166a83c8)
+        ;
+
+        
+    
+    
+            var marker_b2bbe2bfea76fe271bbdcec4e6a7a3f4 = L.marker(
+                [41.0467617, 28.9361015],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_2c6d7f89b679ccf706adb78730eb42b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b2bbe2bfea76fe271bbdcec4e6a7a3f4.setIcon(icon_2c6d7f89b679ccf706adb78730eb42b3);
+        
+    
+        var popup_598258794be78baf0c031670e9349fbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0deb06a7b730a7635d933a67730074c = $(`<div id="html_a0deb06a7b730a7635d933a67730074c" style="width: 100.0%; height: 100.0%;">Kütüphane: Eyüp Sultan Kütüphanesi</div>`)[0];
+                popup_598258794be78baf0c031670e9349fbc.setContent(html_a0deb06a7b730a7635d933a67730074c);
+            
+        
+
+        marker_b2bbe2bfea76fe271bbdcec4e6a7a3f4.bindPopup(popup_598258794be78baf0c031670e9349fbc)
+        ;
+
+        
+    
+    
+            var marker_1306f63a748b68c3eeddc76dc00047ef = L.marker(
+                [40.9276044, 29.1569842],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_3859825c6340462fd57bdfc8be5fbd20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1306f63a748b68c3eeddc76dc00047ef.setIcon(icon_3859825c6340462fd57bdfc8be5fbd20);
+        
+    
+        var popup_ca7e0cb564b3e2180ebc051bcb31a690 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b19a17f105002215cc022326517e2ba7 = $(`<div id="html_b19a17f105002215cc022326517e2ba7" style="width: 100.0%; height: 100.0%;">Kütüphane: Muzaffer İzgü Kütüphanesi</div>`)[0];
+                popup_ca7e0cb564b3e2180ebc051bcb31a690.setContent(html_b19a17f105002215cc022326517e2ba7);
+            
+        
+
+        marker_1306f63a748b68c3eeddc76dc00047ef.bindPopup(popup_ca7e0cb564b3e2180ebc051bcb31a690)
+        ;
+
+        
+    
+    
+            var marker_60ea01c841c8d79a7b97265babcce16b = L.marker(
+                [41.046091, 28.936105],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_d7fe10a229f9e3e4f8d99c88fe4c6cae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_60ea01c841c8d79a7b97265babcce16b.setIcon(icon_d7fe10a229f9e3e4f8d99c88fe4c6cae);
+        
+    
+        var popup_bed1c98ff08002123f9367cff8d78b9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebc52210c6bd03ff9a6be012c8ab7038 = $(`<div id="html_ebc52210c6bd03ff9a6be012c8ab7038" style="width: 100.0%; height: 100.0%;">Kütüphane: Naile Akıncı Kütüphanesi</div>`)[0];
+                popup_bed1c98ff08002123f9367cff8d78b9f.setContent(html_ebc52210c6bd03ff9a6be012c8ab7038);
+            
+        
+
+        marker_60ea01c841c8d79a7b97265babcce16b.bindPopup(popup_bed1c98ff08002123f9367cff8d78b9f)
+        ;
+
+        
+    
+    
+            var marker_9c695aca5b147a86cd3455c5cb194c1f = L.marker(
+                [41.0249595, 29.1047363],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_4a32b48f24a53773c330c730fed97864 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c695aca5b147a86cd3455c5cb194c1f.setIcon(icon_4a32b48f24a53773c330c730fed97864);
+        
+    
+        var popup_ac9eb5b9b22b011fe1ba0bf7d3f7dccd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba6d087449f3d731c31c1c8ec1ced193 = $(`<div id="html_ba6d087449f3d731c31c1c8ec1ced193" style="width: 100.0%; height: 100.0%;">Kütüphane: Ahmet Süheyl Ünver Kütüphanesi</div>`)[0];
+                popup_ac9eb5b9b22b011fe1ba0bf7d3f7dccd.setContent(html_ba6d087449f3d731c31c1c8ec1ced193);
+            
+        
+
+        marker_9c695aca5b147a86cd3455c5cb194c1f.bindPopup(popup_ac9eb5b9b22b011fe1ba0bf7d3f7dccd)
+        ;
+
+        
+    
+    
+            var marker_20fae08df832275f9fb6c7c5a9e51df4 = L.marker(
+                [41.0360287, 28.8271384],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_dd0b861546c32014e15333ee131416f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_20fae08df832275f9fb6c7c5a9e51df4.setIcon(icon_dd0b861546c32014e15333ee131416f9);
+        
+    
+        var popup_eab641f7662dd9383c05f7bd7f93e666 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baf8cc04ca0bc7de8a71df65e018eedf = $(`<div id="html_baf8cc04ca0bc7de8a71df65e018eedf" style="width: 100.0%; height: 100.0%;">Kütüphane: Nasrettin Hoca Çocuk Kütüphanesi</div>`)[0];
+                popup_eab641f7662dd9383c05f7bd7f93e666.setContent(html_baf8cc04ca0bc7de8a71df65e018eedf);
+            
+        
+
+        marker_20fae08df832275f9fb6c7c5a9e51df4.bindPopup(popup_eab641f7662dd9383c05f7bd7f93e666)
+        ;
+
+        
+    
+    
+            var marker_02ea124e92d73a9c6c87052add397096 = L.marker(
+                [41.0563913, 28.9871456],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_f10b84e7e58f183dcb0e217a8ff5ae88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_02ea124e92d73a9c6c87052add397096.setIcon(icon_f10b84e7e58f183dcb0e217a8ff5ae88);
+        
+    
+        var popup_96bedf58d467b48264289003932fbafc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fe73cb2c3fa3e36868c903105e8a302 = $(`<div id="html_4fe73cb2c3fa3e36868c903105e8a302" style="width: 100.0%; height: 100.0%;">Kütüphane: Atatürk Müzesi Kütüphanesi</div>`)[0];
+                popup_96bedf58d467b48264289003932fbafc.setContent(html_4fe73cb2c3fa3e36868c903105e8a302);
+            
+        
+
+        marker_02ea124e92d73a9c6c87052add397096.bindPopup(popup_96bedf58d467b48264289003932fbafc)
+        ;
+
+        
+    
+    
+            var marker_0a78d54f95dcac4073b7733072f6e794 = L.marker(
+                [41.0413651, 28.9605516],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_56bf0458632ce979359342201cf6ceb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a78d54f95dcac4073b7733072f6e794.setIcon(icon_56bf0458632ce979359342201cf6ceb8);
+        
+    
+        var popup_b2aed302100726f9f2196f63d8571475 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4329619979dbf9dcefffd1575a8eed40 = $(`<div id="html_4329619979dbf9dcefffd1575a8eed40" style="width: 100.0%; height: 100.0%;">Kütüphane: Okçular Tekkesi Kütüphanesi</div>`)[0];
+                popup_b2aed302100726f9f2196f63d8571475.setContent(html_4329619979dbf9dcefffd1575a8eed40);
+            
+        
+
+        marker_0a78d54f95dcac4073b7733072f6e794.bindPopup(popup_b2aed302100726f9f2196f63d8571475)
+        ;
+
+        
+    
+    
+            var marker_009a5c198aca1ae8e3246c9f0c416363 = L.marker(
+                [40.8685968, 29.1250404],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_277c0118c5f09a5de6f502bba45a6c08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_009a5c198aca1ae8e3246c9f0c416363.setIcon(icon_277c0118c5f09a5de6f502bba45a6c08);
+        
+    
+        var popup_8cdd3c4db338dce86db5e545fb9cebfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24c31224da3da16e53535d44b31d650d = $(`<div id="html_24c31224da3da16e53535d44b31d650d" style="width: 100.0%; height: 100.0%;">Kütüphane: Taş Mektep Kütüphanesi</div>`)[0];
+                popup_8cdd3c4db338dce86db5e545fb9cebfb.setContent(html_24c31224da3da16e53535d44b31d650d);
+            
+        
+
+        marker_009a5c198aca1ae8e3246c9f0c416363.bindPopup(popup_8cdd3c4db338dce86db5e545fb9cebfb)
+        ;
+
+        
+    
+    
+            var marker_aecaad3d1fef5fc6835a190fb97a0fb6 = L.marker(
+                [41.059561, 28.8668583],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_273aba9d5959c7a4b8532f6c75659133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aecaad3d1fef5fc6835a190fb97a0fb6.setIcon(icon_273aba9d5959c7a4b8532f6c75659133);
+        
+    
+        var popup_d6bb999d8733080ee797ea4fe3af0e9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62f6a9566c4ad8c862b5b387c23e684d = $(`<div id="html_62f6a9566c4ad8c862b5b387c23e684d" style="width: 100.0%; height: 100.0%;">Kütüphane: Osman Nuri Ergin Kütüphanesi</div>`)[0];
+                popup_d6bb999d8733080ee797ea4fe3af0e9a.setContent(html_62f6a9566c4ad8c862b5b387c23e684d);
+            
+        
+
+        marker_aecaad3d1fef5fc6835a190fb97a0fb6.bindPopup(popup_d6bb999d8733080ee797ea4fe3af0e9a)
+        ;
+
+        
+    
+    
+            var marker_161ea04198ce55972930c858c4e5d530 = L.marker(
+                [41.0576987, 28.865506],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_e0cbb45128f049196ac2feb3990de907 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_161ea04198ce55972930c858c4e5d530.setIcon(icon_e0cbb45128f049196ac2feb3990de907);
+        
+    
+        var popup_46cd5645bbe93e5ca83186d9035fd0a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37619fd159414642db41395ab74f2950 = $(`<div id="html_37619fd159414642db41395ab74f2950" style="width: 100.0%; height: 100.0%;">Kütüphane: Evliya Çelebi Kütüphanesi</div>`)[0];
+                popup_46cd5645bbe93e5ca83186d9035fd0a0.setContent(html_37619fd159414642db41395ab74f2950);
+            
+        
+
+        marker_161ea04198ce55972930c858c4e5d530.bindPopup(popup_46cd5645bbe93e5ca83186d9035fd0a0)
+        ;
+
+        
+    
+    
+            var marker_63bf3f4332c4d110301345da637ed5e9 = L.marker(
+                [40.8724482, 29.2646736],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_f7e8ce5688d9cba9d7ea29a3f2367705 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_63bf3f4332c4d110301345da637ed5e9.setIcon(icon_f7e8ce5688d9cba9d7ea29a3f2367705);
+        
+    
+        var popup_d54f04d343649a477fe66a427381ae1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06f3b5e094c1327113c70d7faa126949 = $(`<div id="html_06f3b5e094c1327113c70d7faa126949" style="width: 100.0%; height: 100.0%;">Kütüphane: İdris Güllüce Kütüphanesi</div>`)[0];
+                popup_d54f04d343649a477fe66a427381ae1e.setContent(html_06f3b5e094c1327113c70d7faa126949);
+            
+        
+
+        marker_63bf3f4332c4d110301345da637ed5e9.bindPopup(popup_d54f04d343649a477fe66a427381ae1e)
+        ;
+
+        
+    
+    
+            var marker_babc03e25f0e842240eb93de384e249d = L.marker(
+                [41.066537, 28.995923],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_2e3547920495687bb3bec0f6cefdbd32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_babc03e25f0e842240eb93de384e249d.setIcon(icon_2e3547920495687bb3bec0f6cefdbd32);
+        
+    
+        var popup_c18f37ff30c69a5753328d6b937ed95e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55d21378655a1c4923257050a7dac272 = $(`<div id="html_55d21378655a1c4923257050a7dac272" style="width: 100.0%; height: 100.0%;">Kütüphane: Ödünç Kütüphane</div>`)[0];
+                popup_c18f37ff30c69a5753328d6b937ed95e.setContent(html_55d21378655a1c4923257050a7dac272);
+            
+        
+
+        marker_babc03e25f0e842240eb93de384e249d.bindPopup(popup_c18f37ff30c69a5753328d6b937ed95e)
+        ;
+
+        
+    
+    
+            var marker_8403b718285d8a7f1b409628d41811df = L.marker(
+                [41.039363, 28.9855928],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_64d51f1496199076b94027d3a84909a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8403b718285d8a7f1b409628d41811df.setIcon(icon_64d51f1496199076b94027d3a84909a3);
+        
+    
+        var popup_3c9bd30e9daabd0a9a652021c2342a87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6d32eb76adc60eac1cd3a13e626b88e = $(`<div id="html_e6d32eb76adc60eac1cd3a13e626b88e" style="width: 100.0%; height: 100.0%;">Kütüphane: Sevgi Soysal Kütüphanesi</div>`)[0];
+                popup_3c9bd30e9daabd0a9a652021c2342a87.setContent(html_e6d32eb76adc60eac1cd3a13e626b88e);
+            
+        
+
+        marker_8403b718285d8a7f1b409628d41811df.bindPopup(popup_3c9bd30e9daabd0a9a652021c2342a87)
+        ;
+
+        
+    
+    
+            var marker_c3683822701ac8324eefa36a9530c49e = L.marker(
+                [40.8865236, 29.1955833],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_80542ca0d6ef9f57792d65c3e01a5f7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3683822701ac8324eefa36a9530c49e.setIcon(icon_80542ca0d6ef9f57792d65c3e01a5f7e);
+        
+    
+        var popup_aefb1c7d0b8a57636ad60efdb3749ddc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_079ffa92648ce7863bed741d0a46fb3f = $(`<div id="html_079ffa92648ce7863bed741d0a46fb3f" style="width: 100.0%; height: 100.0%;">Kütüphane: Muallim Cevdet Kütüphanesi</div>`)[0];
+                popup_aefb1c7d0b8a57636ad60efdb3749ddc.setContent(html_079ffa92648ce7863bed741d0a46fb3f);
+            
+        
+
+        marker_c3683822701ac8324eefa36a9530c49e.bindPopup(popup_aefb1c7d0b8a57636ad60efdb3749ddc)
+        ;
+
+        
+    
+    
+            var marker_3a7943953a656520da215fe6afbc5aa8 = L.marker(
+                [40.990236, 28.783437],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_fd8d9f5d621a92c404574b250a3e9ef5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3a7943953a656520da215fe6afbc5aa8.setIcon(icon_fd8d9f5d621a92c404574b250a3e9ef5);
+        
+    
+        var popup_188c8af8c60b652d694221d6ad42eaf3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6876a474e99b053e3fb1b037d9ee9bc = $(`<div id="html_d6876a474e99b053e3fb1b037d9ee9bc" style="width: 100.0%; height: 100.0%;">Kütüphane: Atilla İlhan Kütüphanesi</div>`)[0];
+                popup_188c8af8c60b652d694221d6ad42eaf3.setContent(html_d6876a474e99b053e3fb1b037d9ee9bc);
+            
+        
+
+        marker_3a7943953a656520da215fe6afbc5aa8.bindPopup(popup_188c8af8c60b652d694221d6ad42eaf3)
+        ;
+
+        
+    
+    
+            var marker_cb4b755aafca27bd3bea5a7ff1c7361b = L.marker(
+                [41.0461465, 28.9024519],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_14dc8dee178f6c224163b5b059d43eac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb4b755aafca27bd3bea5a7ff1c7361b.setIcon(icon_14dc8dee178f6c224163b5b059d43eac);
+        
+    
+        var popup_e933ac3f5903a722d538a9f53333d5d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3bced22136185852788177ce0464f46 = $(`<div id="html_f3bced22136185852788177ce0464f46" style="width: 100.0%; height: 100.0%;">Kütüphane: Suat Derviş Kütüphanesi</div>`)[0];
+                popup_e933ac3f5903a722d538a9f53333d5d4.setContent(html_f3bced22136185852788177ce0464f46);
+            
+        
+
+        marker_cb4b755aafca27bd3bea5a7ff1c7361b.bindPopup(popup_e933ac3f5903a722d538a9f53333d5d4)
+        ;
+
+        
+    
+    
+            var marker_9c1f88656f7250c370ac4355bf3544cb = L.marker(
+                [40.9765821, 28.8559009],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_e9bab97ee9b768d4a53a592b71231138 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c1f88656f7250c370ac4355bf3544cb.setIcon(icon_e9bab97ee9b768d4a53a592b71231138);
+        
+    
+        var popup_e6e69e4c28ae7be38a8ca9d46af5cf9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f234bbb2afe0d5704f928acedd97a93 = $(`<div id="html_4f234bbb2afe0d5704f928acedd97a93" style="width: 100.0%; height: 100.0%;">Kütüphane: Baruthane Kütüphane</div>`)[0];
+                popup_e6e69e4c28ae7be38a8ca9d46af5cf9e.setContent(html_4f234bbb2afe0d5704f928acedd97a93);
+            
+        
+
+        marker_9c1f88656f7250c370ac4355bf3544cb.bindPopup(popup_e6e69e4c28ae7be38a8ca9d46af5cf9e)
+        ;
+
+        
+    
+    
+            var marker_318b20218d47ec0fb250dd2a9ec00353 = L.marker(
+                [40.9464983, 29.1084433],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_6cf1b91f82b156fa26606188901055a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_318b20218d47ec0fb250dd2a9ec00353.setIcon(icon_6cf1b91f82b156fa26606188901055a3);
+        
+    
+        var popup_41aa013cd5cdcc64a9959a4b9feae432 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fe40a39d3b32df8060be12622e2d00e = $(`<div id="html_5fe40a39d3b32df8060be12622e2d00e" style="width: 100.0%; height: 100.0%;">Kütüphane: Halil İnalcık Kütüphanesi</div>`)[0];
+                popup_41aa013cd5cdcc64a9959a4b9feae432.setContent(html_5fe40a39d3b32df8060be12622e2d00e);
+            
+        
+
+        marker_318b20218d47ec0fb250dd2a9ec00353.bindPopup(popup_41aa013cd5cdcc64a9959a4b9feae432)
+        ;
+
+        
+    
+    
+            var marker_bfada6a3beb5119485e3931b9f4ac35d = L.marker(
+                [41.0259516, 28.9349238],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_ea5b1bc4babfd8c23e464bc779220b1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bfada6a3beb5119485e3931b9f4ac35d.setIcon(icon_ea5b1bc4babfd8c23e464bc779220b1a);
+        
+    
+        var popup_42d4ecbcdc6f03668620f22bfb864b26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a312cfc76b40aeabb0867ec2a8f41eb2 = $(`<div id="html_a312cfc76b40aeabb0867ec2a8f41eb2" style="width: 100.0%; height: 100.0%;">Kütüphane: Ayşe Hatun Halk Kütüphanesi</div>`)[0];
+                popup_42d4ecbcdc6f03668620f22bfb864b26.setContent(html_a312cfc76b40aeabb0867ec2a8f41eb2);
+            
+        
+
+        marker_bfada6a3beb5119485e3931b9f4ac35d.bindPopup(popup_42d4ecbcdc6f03668620f22bfb864b26)
+        ;
+
+        
+    
+    
+            var marker_5606c2bd664108b5d8e5788f7dccb2fa = L.marker(
+                [40.8759363, 29.231941],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_482ff592586fb1779b6fbd19202b189a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5606c2bd664108b5d8e5788f7dccb2fa.setIcon(icon_482ff592586fb1779b6fbd19202b189a);
+        
+    
+        var popup_092c1c76751b3db656ebdb5f4353090b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be09acb744080e50ab738c90135149ea = $(`<div id="html_be09acb744080e50ab738c90135149ea" style="width: 100.0%; height: 100.0%;">Kütüphane: Hasan İzzettin Dinamo Kütüphanesi</div>`)[0];
+                popup_092c1c76751b3db656ebdb5f4353090b.setContent(html_be09acb744080e50ab738c90135149ea);
+            
+        
+
+        marker_5606c2bd664108b5d8e5788f7dccb2fa.bindPopup(popup_092c1c76751b3db656ebdb5f4353090b)
+        ;
+
+        
+    
+    
+            var marker_fbeea23b6fed270d9e9d29cd9bb9fbc2 = L.marker(
+                [41.0730739, 28.886912],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_18486a7bfe9dc5e428559df354bac43b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fbeea23b6fed270d9e9d29cd9bb9fbc2.setIcon(icon_18486a7bfe9dc5e428559df354bac43b);
+        
+    
+        var popup_5d412026573e758fb5f005045f914d44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdad261277ecd813e78606e8be779598 = $(`<div id="html_fdad261277ecd813e78606e8be779598" style="width: 100.0%; height: 100.0%;">Kütüphane: Sâmiha Ayverdi Kütüphanesi</div>`)[0];
+                popup_5d412026573e758fb5f005045f914d44.setContent(html_fdad261277ecd813e78606e8be779598);
+            
+        
+
+        marker_fbeea23b6fed270d9e9d29cd9bb9fbc2.bindPopup(popup_5d412026573e758fb5f005045f914d44)
+        ;
+
+        
+    
+    
+            var marker_4ebdb20d2dd1dea33d1c1c7dc900dbc5 = L.marker(
+                [41.0560231, 28.7922662],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_a6eec4381c74a5f82729ae99fb1127d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ebdb20d2dd1dea33d1c1c7dc900dbc5.setIcon(icon_a6eec4381c74a5f82729ae99fb1127d3);
+        
+    
+        var popup_5b79a2c43b29f65c016dd4411da68a10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_402bfb1e06b64cd938731c8b0cb59163 = $(`<div id="html_402bfb1e06b64cd938731c8b0cb59163" style="width: 100.0%; height: 100.0%;">Kütüphane: Metin Altıok Kütüphanesi</div>`)[0];
+                popup_5b79a2c43b29f65c016dd4411da68a10.setContent(html_402bfb1e06b64cd938731c8b0cb59163);
+            
+        
+
+        marker_4ebdb20d2dd1dea33d1c1c7dc900dbc5.bindPopup(popup_5b79a2c43b29f65c016dd4411da68a10)
+        ;
+
+        
+    
+    
+            var marker_d4732a46ccbfb40e58e86f1eafc2c726 = L.marker(
+                [41.053897, 28.8731175],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_a0b9abde05f1f4af29aa7be5bd7eecc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d4732a46ccbfb40e58e86f1eafc2c726.setIcon(icon_a0b9abde05f1f4af29aa7be5bd7eecc1);
+        
+    
+        var popup_cef0301703e5ab6b6e9560fdfd151465 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d67adda32f5365ca440b94aeb1d1a7b2 = $(`<div id="html_d67adda32f5365ca440b94aeb1d1a7b2" style="width: 100.0%; height: 100.0%;">Kütüphane: Barış Manço Kütüphanesi</div>`)[0];
+                popup_cef0301703e5ab6b6e9560fdfd151465.setContent(html_d67adda32f5365ca440b94aeb1d1a7b2);
+            
+        
+
+        marker_d4732a46ccbfb40e58e86f1eafc2c726.bindPopup(popup_cef0301703e5ab6b6e9560fdfd151465)
+        ;
+
+        
+    
+    
+            var marker_7f3ec4262fd012aeeaa68992eb84108d = L.marker(
+                [41.0388421, 28.9889879],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_e903718a0da2647d5defb40be4e4a69b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f3ec4262fd012aeeaa68992eb84108d.setIcon(icon_e903718a0da2647d5defb40be4e4a69b);
+        
+    
+        var popup_fb1c467da2d14244ed42729c33aef131 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2827b0dbe59a0a46c36957970e00d6b = $(`<div id="html_d2827b0dbe59a0a46c36957970e00d6b" style="width: 100.0%; height: 100.0%;">Kütüphane: Atatürk Kitaplığı (Merkez Kütüphane)</div>`)[0];
+                popup_fb1c467da2d14244ed42729c33aef131.setContent(html_d2827b0dbe59a0a46c36957970e00d6b);
+            
+        
+
+        marker_7f3ec4262fd012aeeaa68992eb84108d.bindPopup(popup_fb1c467da2d14244ed42729c33aef131)
+        ;
+
+        
+    
+    
+            var marker_7bf14d2845606e49ed22ef2185816f22 = L.marker(
+                [41.0312315, 28.7025463],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_0a31b6d31ef96287569aa5457743f398 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7bf14d2845606e49ed22ef2185816f22.setIcon(icon_0a31b6d31ef96287569aa5457743f398);
+        
+    
+        var popup_1408fdf26846cd4c79c69b3ea1f5e008 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09e5b5fde23a72e4d36950f53cd88618 = $(`<div id="html_09e5b5fde23a72e4d36950f53cd88618" style="width: 100.0%; height: 100.0%;">Kütüphane: Fakir Baykurt Kütüphanesi</div>`)[0];
+                popup_1408fdf26846cd4c79c69b3ea1f5e008.setContent(html_09e5b5fde23a72e4d36950f53cd88618);
+            
+        
+
+        marker_7bf14d2845606e49ed22ef2185816f22.bindPopup(popup_1408fdf26846cd4c79c69b3ea1f5e008)
+        ;
+
+        
+    
+    
+            var marker_a0747cf202a0fceb27aec57bdc26aff2 = L.marker(
+                [41.013911, 28.951627],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_ffcf4a5ff786175ea428402928e16e0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a0747cf202a0fceb27aec57bdc26aff2.setIcon(icon_ffcf4a5ff786175ea428402928e16e0b);
+        
+    
+        var popup_c718fe464bf6313fe58f17e05105f85e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_808e10b7b730e277b1cacf7c5ed4ff22 = $(`<div id="html_808e10b7b730e277b1cacf7c5ed4ff22" style="width: 100.0%; height: 100.0%;">Kütüphane: Kazı Evi Kütüphanesi</div>`)[0];
+                popup_c718fe464bf6313fe58f17e05105f85e.setContent(html_808e10b7b730e277b1cacf7c5ed4ff22);
+            
+        
+
+        marker_a0747cf202a0fceb27aec57bdc26aff2.bindPopup(popup_c718fe464bf6313fe58f17e05105f85e)
+        ;
+
+        
+    
+    
+            var marker_35c0eed45683bc96ea5bff2639e55fa0 = L.marker(
+                [41.0011851, 28.7113501],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_3167f190c250eb1f367d068cefb228a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_35c0eed45683bc96ea5bff2639e55fa0.setIcon(icon_3167f190c250eb1f367d068cefb228a3);
+        
+    
+        var popup_a8c8f3a651fc4e1cce24dad7c838d16c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4d74e3c2b359bdd912f30836c10329f = $(`<div id="html_a4d74e3c2b359bdd912f30836c10329f" style="width: 100.0%; height: 100.0%;">Kütüphane: Sabahattin Eyüboğlu Kütüphanesi</div>`)[0];
+                popup_a8c8f3a651fc4e1cce24dad7c838d16c.setContent(html_a4d74e3c2b359bdd912f30836c10329f);
+            
+        
+
+        marker_35c0eed45683bc96ea5bff2639e55fa0.bindPopup(popup_a8c8f3a651fc4e1cce24dad7c838d16c)
+        ;
+
+        
+    
+    
+            var marker_3641c190eb4fd9007a94b18840ffec83 = L.marker(
+                [41.0830865, 28.928516],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_b2c50beff0e24444e1ea2dfa2bdda044 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3641c190eb4fd9007a94b18840ffec83.setIcon(icon_b2c50beff0e24444e1ea2dfa2bdda044);
+        
+    
+        var popup_d9d8686271c407c88246bb8529318f30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cf2dffe0ebe21ca0e8233efcc3558ee = $(`<div id="html_7cf2dffe0ebe21ca0e8233efcc3558ee" style="width: 100.0%; height: 100.0%;">Kütüphane: Hasan Hüseyin Korkmazgil Kütüphanesi</div>`)[0];
+                popup_d9d8686271c407c88246bb8529318f30.setContent(html_7cf2dffe0ebe21ca0e8233efcc3558ee);
+            
+        
+
+        marker_3641c190eb4fd9007a94b18840ffec83.bindPopup(popup_d9d8686271c407c88246bb8529318f30)
+        ;
+
+        
+    
+    
+            var marker_3e7415a3646ff0088ee8d26745f8e594 = L.marker(
+                [41.0382864, 28.9703304],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_94b8ad65848bdee152826a3e2620b8b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e7415a3646ff0088ee8d26745f8e594.setIcon(icon_94b8ad65848bdee152826a3e2620b8b4);
+        
+    
+        var popup_439fe4810b689cebf8229a5cc26ff666 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_679e1d8b6deaac1158b0a5b5f500580d = $(`<div id="html_679e1d8b6deaac1158b0a5b5f500580d" style="width: 100.0%; height: 100.0%;">Kütüphane: Peyami Safa Kütüphanesi</div>`)[0];
+                popup_439fe4810b689cebf8229a5cc26ff666.setContent(html_679e1d8b6deaac1158b0a5b5f500580d);
+            
+        
+
+        marker_3e7415a3646ff0088ee8d26745f8e594.bindPopup(popup_439fe4810b689cebf8229a5cc26ff666)
+        ;
+
+        
+    
+    
+            var marker_322b12df8cc4ae0f65fb2013d990a6c7 = L.marker(
+                [40.9837196, 29.0256257],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_79e56b575c032ef307e6b67b6d4ccc73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_322b12df8cc4ae0f65fb2013d990a6c7.setIcon(icon_79e56b575c032ef307e6b67b6d4ccc73);
+        
+    
+        var popup_555e600ced861ad07d111c765ce97e0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92fbde8f1fde040a4f807f0932ce234d = $(`<div id="html_92fbde8f1fde040a4f807f0932ce234d" style="width: 100.0%; height: 100.0%;">Kütüphane: Kadıköy İskelesi Kütüphanesi</div>`)[0];
+                popup_555e600ced861ad07d111c765ce97e0e.setContent(html_92fbde8f1fde040a4f807f0932ce234d);
+            
+        
+
+        marker_322b12df8cc4ae0f65fb2013d990a6c7.bindPopup(popup_555e600ced861ad07d111c765ce97e0e)
+        ;
+
+        
+    
+    
+            var marker_07736b2c89300e2dfd0b96daf5835e09 = L.marker(
+                [41.0791187, 29.0738899],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_857e13946ffe3aaaa22780ba08284202 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_07736b2c89300e2dfd0b96daf5835e09.setIcon(icon_857e13946ffe3aaaa22780ba08284202);
+        
+    
+        var popup_519a43d6fa081198b9bc55a32c5c5e38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03f129c4f33c300be969ba0222a32d5e = $(`<div id="html_03f129c4f33c300be969ba0222a32d5e" style="width: 100.0%; height: 100.0%;">Kütüphane: Feza Gürsey Kütüphanesi</div>`)[0];
+                popup_519a43d6fa081198b9bc55a32c5c5e38.setContent(html_03f129c4f33c300be969ba0222a32d5e);
+            
+        
+
+        marker_07736b2c89300e2dfd0b96daf5835e09.bindPopup(popup_519a43d6fa081198b9bc55a32c5c5e38)
+        ;
+
+        
+    
+    
+            var marker_3f9362d43e10a720f3efe185462d45ad = L.marker(
+                [40.978965, 29.025057],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_07ee15426fdd3cfc099d802b430a1304 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3f9362d43e10a720f3efe185462d45ad.setIcon(icon_07ee15426fdd3cfc099d802b430a1304);
+        
+    
+        var popup_a94a42fa53cebf287d9335ad28fcc88f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_776edc9eac0edadd882a776942386254 = $(`<div id="html_776edc9eac0edadd882a776942386254" style="width: 100.0%; height: 100.0%;">Kütüphane: Moda İskelesi Kütüphanesi</div>`)[0];
+                popup_a94a42fa53cebf287d9335ad28fcc88f.setContent(html_776edc9eac0edadd882a776942386254);
+            
+        
+
+        marker_3f9362d43e10a720f3efe185462d45ad.bindPopup(popup_a94a42fa53cebf287d9335ad28fcc88f)
+        ;
+
+        
+    
+    
+            var marker_80169108c8e4c5d58647b2c7dad9d4ab = L.marker(
+                [41.033857, 28.6829253],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_e1d776f4b25ff8b10217899ec1f38b58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_80169108c8e4c5d58647b2c7dad9d4ab.setIcon(icon_e1d776f4b25ff8b10217899ec1f38b58);
+        
+    
+        var popup_cbabab54a87be4ba0a69438a2ae509c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51315dd4f2d94286a5436b2e0bd0ff78 = $(`<div id="html_51315dd4f2d94286a5436b2e0bd0ff78" style="width: 100.0%; height: 100.0%;">Kütüphane: İsmail Hakkı Tonguç Kütüphanesi</div>`)[0];
+                popup_cbabab54a87be4ba0a69438a2ae509c1.setContent(html_51315dd4f2d94286a5436b2e0bd0ff78);
+            
+        
+
+        marker_80169108c8e4c5d58647b2c7dad9d4ab.bindPopup(popup_cbabab54a87be4ba0a69438a2ae509c1)
+        ;
+
+        
+    
+    
+            var marker_6fa5be563364aacb0bf1a1aa47818867 = L.marker(
+                [41.0194755, 28.9398145],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_d50ed7b9dd61f6d417cc8192583e779c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6fa5be563364aacb0bf1a1aa47818867.setIcon(icon_d50ed7b9dd61f6d417cc8192583e779c);
+        
+    
+        var popup_72146ee68a5c110b125ddbf57be7358d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecea521733d71e3d2f979b087b659b47 = $(`<div id="html_ecea521733d71e3d2f979b087b659b47" style="width: 100.0%; height: 100.0%;">Kütüphane: Ahmet Kabaklı Kütüphanesi</div>`)[0];
+                popup_72146ee68a5c110b125ddbf57be7358d.setContent(html_ecea521733d71e3d2f979b087b659b47);
+            
+        
+
+        marker_6fa5be563364aacb0bf1a1aa47818867.bindPopup(popup_72146ee68a5c110b125ddbf57be7358d)
+        ;
+
+        
+    
+    
+            var marker_1bc674937fa83f9540afcc9e63a73e9e = L.marker(
+                [41.0353668, 28.8719003],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_e1c9120616d6505a9136bc93e954437a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1bc674937fa83f9540afcc9e63a73e9e.setIcon(icon_e1c9120616d6505a9136bc93e954437a);
+        
+    
+        var popup_28b32a3f4c428ed516d786369412dcd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_597168b26746d3b4e5c4d892cf468ed9 = $(`<div id="html_597168b26746d3b4e5c4d892cf468ed9" style="width: 100.0%; height: 100.0%;">Kütüphane: Sezai Karakoç Kütüphanesi</div>`)[0];
+                popup_28b32a3f4c428ed516d786369412dcd6.setContent(html_597168b26746d3b4e5c4d892cf468ed9);
+            
+        
+
+        marker_1bc674937fa83f9540afcc9e63a73e9e.bindPopup(popup_28b32a3f4c428ed516d786369412dcd6)
+        ;
+
+        
+    
+    
+            var marker_c6aa4f83fdc17b00ebad10f30a55a44a = L.marker(
+                [41.011778, 28.961575],
+                {}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var icon_1cbec182cc23ed76244bf11df9d5f305 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c6aa4f83fdc17b00ebad10f30a55a44a.setIcon(icon_1cbec182cc23ed76244bf11df9d5f305);
+        
+    
+        var popup_c85ff64cd41c4897101516ff2707b651 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbc8c306d6f8ee34cc463016d59b4046 = $(`<div id="html_cbc8c306d6f8ee34cc463016d59b4046" style="width: 100.0%; height: 100.0%;">Kütüphane: Kütüphane Troleybüs</div>`)[0];
+                popup_c85ff64cd41c4897101516ff2707b651.setContent(html_cbc8c306d6f8ee34cc463016d59b4046);
+            
+        
+
+        marker_c6aa4f83fdc17b00ebad10f30a55a44a.bindPopup(popup_c85ff64cd41c4897101516ff2707b651)
+        ;
+
+        
+    
+    
+            var poly_line_f8f84d62a197af8b4de25802c02ac5be = L.polyline(
+                [[41.0307752, 28.9503855], [41.0531016, 29.2383381]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_5c18d1953a774ce522c50a20bc301b76 = L.polyline(
+                [[41.0307752, 28.9503855], [41.1085892, 28.9891522]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_f02ace11a74f92433a5620d70f3d7132 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0648378, 28.9871121]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_3917373d5ff6c71c15e31ea47fd39a18 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0462622, 28.6353933]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_d519b58f3dd303e35e2acdf69f5608f4 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0938952, 28.9050931]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_277252e8bf2d16f0560ebb08e6d206a9 = L.polyline(
+                [[41.0307752, 28.9503855], [41.041147, 29.007321]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_983a5ea64638d6ee38c3f71267d36e85 = L.polyline(
+                [[41.0307752, 28.9503855], [40.9971785, 29.0425977]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_252e599047e7b43b6db12286bb42b48e = L.polyline(
+                [[41.0307752, 28.9503855], [41.0341057, 28.6509774]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_a0421416a2b5715b058c916d3bd15889 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0292083, 29.0800669]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_47c26952757a182720f85340f05f6b21 = L.polyline(
+                [[41.0307752, 28.9503855], [40.9751207, 28.7864928]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_fa1bdb7ac50607c1e5c389e013324a49 = L.polyline(
+                [[41.0307752, 28.9503855], [41.1871598, 28.8829816]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_9b013844c7061f45d9ee72ff4475d18a = L.polyline(
+                [[41.0307752, 28.9503855], [40.8203218, 29.2814687]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_8e352401bd2cb3b655f15d39fe9d560b = L.polyline(
+                [[41.0307752, 28.9503855], [41.1458074, 29.0280015]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_4ada5dc93ede5c7c8191acfe0124ed2e = L.polyline(
+                [[41.0307752, 28.9503855], [40.9976787, 28.7927645]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_f72094e310b5ec01bc91ad2fa1b5a220 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0135686, 29.2066752]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_061d4c9556ebb5bf31951483d627a8a4 = L.polyline(
+                [[41.0307752, 28.9503855], [40.9690471, 29.2668984]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_52bd64939f390fb6db30f60feb33ced2 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0307752, 28.9503855]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_421dd014adb1862fd9bd17c6b560ef03 = L.polyline(
+                [[41.0307752, 28.9503855], [41.1863569, 28.7653643]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_2d702575be32281234b763f30057f122 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0156553, 28.9255868]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_298d65ec809f02f81256e12dd5720eef = L.polyline(
+                [[41.0307752, 28.9503855], [41.1794703, 28.7459919]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_dc72ea0be2ca84e867a6ae284ef9c472 = L.polyline(
+                [[41.0307752, 28.9503855], [40.9840594, 29.0308078]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_cc84093b1c9c5f58f773c9ae7c399e0d = L.polyline(
+                [[41.0307752, 28.9503855], [41.0683594, 28.7528976]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_14227b70a1ce2096a0325c123637fde7 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0978634, 28.8764685]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_3f3b0fae0a54fe78bf02b4e82b655bf5 = L.polyline(
+                [[41.0307752, 28.9503855], [41.1044027, 28.7853869]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_eac146956357257ca5c80aaf6a390678 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0467617, 28.9361015]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_0fbdbdfba101b5b46edb5a664ada457c = L.polyline(
+                [[41.0307752, 28.9503855], [40.9276044, 29.1569842]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_84d16dfff5ae09e2ed0b5a47c0166e74 = L.polyline(
+                [[41.0307752, 28.9503855], [41.046091, 28.936105]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_46f4fcff5d0e2b25f47f6746028da616 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0249595, 29.1047363]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_270c1a98620ef37e43222f8553c55631 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0360287, 28.8271384]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_ecdae12176e1dcfaa772ba726ac6e456 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0563913, 28.9871456]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_cd7d51332320314602e8cbec0c978160 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0413651, 28.9605516]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_27fffbc14b5b536916b6336d808c0b9b = L.polyline(
+                [[41.0307752, 28.9503855], [40.8685968, 29.1250404]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_39c5cd013fc5912b484c4ed7e5d38cc3 = L.polyline(
+                [[41.0307752, 28.9503855], [41.059561, 28.8668583]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_7c9004d6b97f0ff4eb38002850d3adeb = L.polyline(
+                [[41.0307752, 28.9503855], [41.0576987, 28.865506]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_98e890bdb0c3991ef18c28c2dd91fe8a = L.polyline(
+                [[41.0307752, 28.9503855], [40.8724482, 29.2646736]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_bfb1c502eb1b3fa52937ae483c561138 = L.polyline(
+                [[41.0307752, 28.9503855], [41.066537, 28.995923]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_260fa810960b8cb9bc233717451652c4 = L.polyline(
+                [[41.0307752, 28.9503855], [41.039363, 28.9855928]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_5d7085dfdb00f66b1fd386767013509b = L.polyline(
+                [[41.0307752, 28.9503855], [40.8865236, 29.1955833]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_8df38d3cc948ca8c488986d02221ef66 = L.polyline(
+                [[41.0307752, 28.9503855], [40.990236, 28.783437]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_742392113e87bf3d0a62cdfea790e7ca = L.polyline(
+                [[41.0307752, 28.9503855], [41.0461465, 28.9024519]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_8d184bf64f88e62c420aa3c550077682 = L.polyline(
+                [[41.0307752, 28.9503855], [40.9765821, 28.8559009]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_efc0c951ec4884deee8778789e5d6eb2 = L.polyline(
+                [[41.0307752, 28.9503855], [40.9464983, 29.1084433]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_36f4620e2102fbcbb61b47594dda4932 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0259516, 28.9349238]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_6c34b1fa1596d751cd71ab245aa6b213 = L.polyline(
+                [[41.0307752, 28.9503855], [40.8759363, 29.231941]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_4ffcee8c132f92be9d56eb291f236bf6 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0730739, 28.886912]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_bba7a025e0a316fa2ac537667b9f17b2 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0560231, 28.7922662]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_ed350731bea50c1ced5961f8324e9d25 = L.polyline(
+                [[41.0307752, 28.9503855], [41.053897, 28.8731175]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_fa0e784fe0b55f9c3bff16fd2d5cd6e0 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0388421, 28.9889879]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_0c9f28f9fdf9cc843428d941f57147e4 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0312315, 28.7025463]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_771007d0b1ad58eb35fd4a57fa712ce7 = L.polyline(
+                [[41.0307752, 28.9503855], [41.013911, 28.951627]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_1a2be1301260454ccb06ce301c8a6c18 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0011851, 28.7113501]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_e00af3836a98f9ca984cd67f92ce7096 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0830865, 28.928516]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_3be09e703bd1db27282899ae6edcbbf6 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0382864, 28.9703304]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_4d9bf25953539baa8b6658f6946ec2aa = L.polyline(
+                [[41.0307752, 28.9503855], [40.9837196, 29.0256257]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_6dbe0b0ccab98e77ec86c3fe7b2965e2 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0791187, 29.0738899]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_d08116092d78da53eb00bdc1c4795f2a = L.polyline(
+                [[41.0307752, 28.9503855], [40.978965, 29.025057]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_465664777d8b1b969a299af8f34c5700 = L.polyline(
+                [[41.0307752, 28.9503855], [41.033857, 28.6829253]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_9fe50dfb883ccee1e296f764e4e4a687 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0194755, 28.9398145]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_ec737fa148d8ff80cf10b7e658e048f3 = L.polyline(
+                [[41.0307752, 28.9503855], [41.0353668, 28.8719003]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+    
+            var poly_line_8b1cd3622542771698f856f2d7974988 = L.polyline(
+                [[41.0307752, 28.9503855], [41.011778, 28.961575]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_54b04c0ae0911d4d627f7489360572c2);
+        
+</script>
+</html>
