@@ -1,4 +1,5 @@
-folium==0.15.0       # Harita oluşturma
-geopy==2.4.1         # Coğrafi mesafe hesaplama
 pulp==2.8.0          # Optimizasyon modelleme
 requests==2.31.0     # HTTP istekleri için
+python-dotenv==1.0.0 # .env dosyası okuma
+flask==3.0.0         # Web sunucusu
+flask-cors==4.0.0    # CORS desteği

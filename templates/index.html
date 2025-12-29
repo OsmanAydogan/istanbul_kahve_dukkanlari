@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Optimal Konum Planlayıcı</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sol Panel -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Resize Handle -->
+            <div class="resize-handle" id="resizeHandle"></div>
+            <header class="sidebar-header">
+                <h1> Optimal Konum Planlayıcı</h1>
+                <p class="subtitle">En uygun tesis konumlarını belirleyin</p>
+            </header>
+
+            <!-- Sektör Seçimi -->
+            <section class="sector-section">
+                <label for="sectorSelect">Sektör:</label>
+                <select id="sectorSelect" class="sector-select">
+                    <option value="general">Genel</option>
+                    <option value="retail">🛒 Perakende / Mağaza</option>
+                    <option value="health">🏥 Sağlık / Hastane</option>
+                    <option value="logistics">📦 Lojistik / Depo</option>
+                    <option value="public">🏛️ Kamu Hizmeti</option>
+                    <option value="energy">⚡ Enerji / Şarj İstasyonu</option>
+                </select>
+            </section>
+
+            <!-- Otomatik Konum Getirme (Yakında) -->
+            <section class="auto-fetch-section disabled-section">
+                <div class="section-header">
+                    <span class="coming-soon-badge">Yakında</span>
+                    <div>
+                        <h2>Otomatik Konum Getir</h2>
+                        <p class="section-desc">Seçilen ilçedeki talep noktalarını otomatik getir</p>
+                    </div>
+                </div>
+                <div class="auto-fetch-controls">
+                    <select id="citySelect" class="city-select" disabled>
+                        <option value="">İl Seçin</option>
+                        <option value="istanbul">İstanbul</option>
+                        <option value="ankara">Ankara</option>
+                        <option value="izmir">İzmir</option>
+                    </select>
+                    <select id="districtSelect" class="district-select" disabled>
+                        <option value="">İlçe Seçin</option>
+                    </select>
+                    <button class="auto-fetch-btn" disabled>
+                        🔍 Getir
+                    </button>
+                </div>
+                <p class="coming-soon-info">
+                    ℹ️ Bu özellik ile seçtiğiniz sektöre göre ilçedeki okullar, hastaneler, AVM'ler vb. otomatik olarak
+                    talep noktası olarak eklenecektir.
+                </p>
+            </section>
+
+            <!-- Talep Noktaları -->
+            <section class="location-section">
+                <div class="section-header">
+                    <span class="section-icon"></span>
+                    <div>
+                        <h2>Talep Noktaları</h2>
+                        <p class="section-desc">Hizmet verilmesi gereken lokasyonlar</p>
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <input type="text" id="demandSearch" class="search-input" placeholder="Konum ara..."
+                        autocomplete="off">
+                    <div id="demandSuggestions" class="suggestions-dropdown"></div>
+                </div>
+
+                <ul id="demandList" class="location-list">
+                    <!-- Dinamik olarak doldurulacak -->
+                </ul>
+                <p class="list-count"><span id="demandCount">0</span>/100 konum eklendi</p>
+            </section>
+
+            <!-- Aday Konumlar -->
+            <section class="location-section">
+                <div class="section-header">
+                    <span class="section-icon"></span>
+                    <div>
+                        <h2>Aday Konumlar</h2>
+                        <p class="section-desc">Tesis kurulabilecek potansiyel yerler</p>
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <input type="text" id="candidateSearch" class="search-input" placeholder="Konum ara..."
+                        autocomplete="off">
+                    <div id="candidateSuggestions" class="suggestions-dropdown"></div>
+                </div>
+
+                <ul id="candidateList" class="location-list">
+                    <!-- Dinamik olarak doldurulacak -->
+                </ul>
+                <p class="list-count"><span id="candidateCount">0</span>/15 konum eklendi</p>
+            </section>
+
+            <!-- Ayarlar -->
+            <section class="settings-section">
+                <label for="numShops">Açılacak tesis sayısı:</label>
+                <input type="number" id="numShops" value="3" min="1" max="20" class="number-input">
+            </section>
+
+            <!-- Optimize Butonu -->
+            <button id="optimizeBtn" class="optimize-btn">
+                Optimize Et
+            </button>
+
+            <!-- Sonuç Alanı -->
+            <div id="resultArea" class="result-area hidden">
+                <h3> Sonuçlar</h3>
+                <div id="resultContent"></div>
+            </div>
+        </aside>
+
+        <!-- Harita -->
+        <main class="map-container">
+            <div id="map"></div>
+        </main>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        const GOOGLE_API_KEY = "{{ api_key }}";
+    </script>
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
